@@ -472,102 +472,64 @@ def step_analysis():
         )
         st.plotly_chart(fig_demand, use_container_width=True)
 
-    # ✅ REPORT & TXT DOWNLOAD SECTION
-    # ... (inside step_analysis, after the crop report text is generated) ...
-
-# --- AI Tamil Assistant Section ---
-    st.markdown("---")
-    st.subheader("🤖 AI Tamil Assistant / தமிழ் உதவி")
-    
-    # Check if a crop is selected in session_state
-    if st.session_state.selected_crop_data is not None:
-        if st.button("🔊 Listen to AI Advice in Tamil / தமிழில் கேட்க", use_container_width=True):
-            with st.spinner("AI ஆலோசனையைத் தயார் செய்கிறது..."):
-                
-                # Use the session_state variable directly
-                current_crop = st.session_state.selected_crop_data
-                
-                # 1. Get the Tamil name for the crop
-                crop_name_ta = TA_CROPS.get(current_crop['crop'], current_crop['crop'])
-                
-                # 2. Call the function from utils/ai_handler.py
-                tamil_msg, audio_file = get_tamil_ai_advice(
-                    crop_name_ta, 
-                    current_crop['profit'], 
-                    current_crop['demand_label'],
-                    region
-                )
-                
-                # 3. Display and Play
-                if audio_file:
-                    st.info(f"✨ **AI Suggestion:**\n\n{tamil_msg}")
-                    st.audio(audio_file, format="audio/mp3")
-                else:
-                    st.error(f"மன்னிக்கவும், ஒரு பிழை ஏற்பட்டது: {tamil_msg}")
-    else:
-        st.warning("தயவுசெய்து மேலே உள்ள ஒரு பயிரைத் தேர்வு செய்யவும் / Please select a crop above.")
-
+    # ✅ REPORT & TXT DOWNLOAD SECTION - ONLY if crop is selected
     if st.session_state.selected_crop_data is not None:
         selected_crop_data = st.session_state.selected_crop_data
         st.subheader(TA_UI['report'])
 
-        crop_name = selected_crop_data['crop']  # ✅ Safe now
+        crop_name = selected_crop_data['crop']
         crop_name_ta = TA_CROPS.get(crop_name, crop_name)
-    crop_name_ta = TA_CROPS.get(crop_name, crop_name)
-
     
         # ✅ Get care info with proper fallback structure
-    if crop_name in CROP_CARE and 'summary' in CROP_CARE[crop_name]:
-        care = CROP_CARE[crop_name]
-    else:
-        # Fallback with 'summary' key to prevent KeyError
-        care = {
-            'summary': {
-                'fert': 'பொதுவான NPK உரம் இடவும்',
-                'water': 'வாரம் ஒருமுறை நீர் பாய்ச்சவும்',
-                'time': 'பருவமழை காலத்தில் விதைக்கவும்',
-                'pest': 'வழக்கமாக கண்காணிக்கவும்'
-            },
-            'phases': None# Empty phases for fallback
-        }
-
-    st.info(
-        f"**{TA_UI['selected']}:** {crop_name_ta} | "
-        f"**{TA_UI['profit']}:** ₹{selected_crop_data['profit']:,.0f}"
-    )
-    
-
-        # 🌱 Detailed Care Instructions Expander
-    with st.expander("🌱 விரிவான பராமரிப்பு வழிகாட்டி / Detailed Care Guide", expanded=False):
-        
-        # Show Summary First
-        st.markdown(f"**📋 சுருக்கம் / Summary:**")
-        st.markdown(f"- 🌱 **உரம்:** {care['summary']['fert']}")
-        st.markdown(f"- 💧 **நீர்:** {care['summary']['water']}")
-        st.markdown(f"- 📅 **பருவம்:** {care['summary']['time']}")
-        st.markdown(f"- 🐛 **பூச்சி:** {care['summary']['pest']}")
-        
-        st.divider()
-        
-        # Show Detailed Phases (if available)
-        if 'phases' in care and care['phases']:
-            st.markdown("### 🔹 நிலை வாரியான பராமரிப்பு / Phase-wise Care")
-            
-            for phase_name, phase_info in care['phases'].items():
-                with st.container():
-                    st.markdown(f"**{phase_name}**")
-                    st.caption(f"⏳ காலம்: {phase_info['duration']}")
-                    
-                    # Display details as bullet points
-                    for detail in phase_info['details']:
-                        st.markdown(f"• {detail}")
-                    
-                    st.markdown("---")
+        if crop_name in CROP_CARE and 'summary' in CROP_CARE[crop_name]:
+            care = CROP_CARE[crop_name]
         else:
-            st.info("ℹ️ விரிவான பராமரிப்பு வழிமுறைகள் / மேலே உள்ள சுருக்கத்தைப் பயன்படுத்தவும்.")
+            # Fallback with 'summary' key to prevent KeyError
+            care = {
+                'summary': {
+                    'fert': 'பொதுவான NPK உரம் இடவும்',
+                    'water': 'வாரம் ஒருமுறை நீர் பாய்ச்சவும்',
+                    'time': 'பருவமழை காலத்தில் விதைக்கவும்',
+                    'pest': 'வழக்கமாக கண்காணிக்கவும்'
+                },
+                'phases': None  # Empty phases for fallback
+            }
+
+        st.info(
+            f"**{TA_UI['selected']}:** {crop_name_ta} | "
+            f"**{TA_UI['profit']}:** ₹{selected_crop_data['profit']:,.0f}"
+        )
+    
+        # 🌱 Detailed Care Instructions Expander
+        with st.expander("🌱 விரிவான பராமரிப்பு வழிகாட்டி / Detailed Care Guide", expanded=False):
+            # Show Summary First
+            st.markdown(f"**📋 சுருக்கம் / Summary:**")
+            st.markdown(f"- 🌱 **உரம்:** {care['summary']['fert']}")
+            st.markdown(f"- 💧 **நீர்:** {care['summary']['water']}")
+            st.markdown(f"- 📅 **பருவம்:** {care['summary']['time']}")
+            st.markdown(f"- 🐛 **பூச்சி:** {care['summary']['pest']}")
+            
+            st.divider()
+            
+            # Show Detailed Phases (if available)
+            if 'phases' in care and care['phases']:
+                st.markdown("### 🔹 நிலை வாரியான பராமரிப்பு / Phase-wise Care")
+                
+                for phase_name, phase_info in care['phases'].items():
+                    with st.container():
+                        st.markdown(f"**{phase_name}**")
+                        st.caption(f"⏳ காலம்: {phase_info['duration']}")
+                        
+                        # Display details as bullet points
+                        for detail in phase_info['details']:
+                            st.markdown(f"• {detail}")
+                        
+                        st.markdown("---")
+            else:
+                st.info("ℹ️ விரிவான பராமரிப்பு வழிமுறைகள் / மேலே உள்ள சுருக்கத்தைப் பயன்படுத்தவும்.")
 
         # ✅ TXT Download Button with unique key
-                # 🌿 CARE GUIDELINES - Enhanced with phases
+        # 🌿 CARE GUIDELINES - Enhanced with phases
         care_section = f"""
 🌿 CROP CARE GUIDELINES / பயிர் பராமரிப்பு வழிமுறைகள்
 ─────────────────────────────────────
@@ -587,7 +549,7 @@ def step_analysis():
                     care_section += f"  • {detail}\n"
         
         care_section += "\n"  # Add spacing
-            # ✅ Calculate supply_risk if not in selected_crop_data
+        # ✅ Calculate supply_risk if not in selected_crop_data
         if 'supply_risk' not in selected_crop_data:
             current_supply = selected_crop_data.get('supply', 0)
             if current_supply > 200:
@@ -657,62 +619,64 @@ tnwise Hackathon 2024 | Government of Tamil Nadu
         )
         
         # ✅ CONFIRM BUTTON - PROPERLY INDENTED INSIDE if selected_crop_data
-                # ✅ SIMPLE CONFIRM BUTTON TEST
-    st.divider()
+        st.divider()
 
-    if st.button(TA_UI['confirm'], type="primary", use_container_width=True):
-        try:
-            farmer_df = pd.read_csv('data/farmers_data.csv')
+        if st.button(TA_UI['confirm'], type="primary", use_container_width=True):
+            try:
+                farmer_df = pd.read_csv('data/farmers_data.csv')
 
-            new_entry = {
-                'farmer_id': st.session_state.farmer_id,
-                'region': region,
-                'land_area': land,
-                'soil_type': details['soil'],
-                'water_availability': details['water'],
-                'nitrogen': details['n'],
-                'phosphorus': details['p'],
-                'potassium': details['k'],
-                'ph': details['ph'],
-                'selected_crop': crop_name,
-                'area_allocated': land
-            }
-
-            farmer_df = pd.concat([farmer_df, pd.DataFrame([new_entry])], ignore_index=True)
-            farmer_df.to_csv('data/farmers_data.csv', index=False)
-
-            # Update regional supply
-            supply_mask = (
-                (supply_df['crop_name'] == crop_name) &
-                (supply_df['region'] == region)
-            )
-
-            if not supply_df[supply_mask].empty:
-                supply_df.loc[supply_mask, 'area_allocated'] += land
-                supply_df.loc[supply_mask, 'farmer_count'] += 1
-            else:
-                new_row = {
+                new_entry = {
+                    'farmer_id': st.session_state.farmer_id,
                     'region': region,
-                    'crop_name': crop_name,
-                    'expected_demand': 1000,
-                    'current_supply': 1000,
-                    'area_allocated': land,
-                    'farmer_count': 1
+                    'land_area': land,
+                    'soil_type': details['soil'],
+                    'water_availability': details['water'],
+                    'nitrogen': details['n'],
+                    'phosphorus': details['p'],
+                    'potassium': details['k'],
+                    'ph': details['ph'],
+                    'selected_crop': crop_name,
+                    'area_allocated': land
                 }
-                supply_df = pd.concat([supply_df, pd.DataFrame([new_row])], ignore_index=True)
 
-            supply_df.to_csv('data/regional_supply.csv', index=False)
+                farmer_df = pd.concat([farmer_df, pd.DataFrame([new_entry])], ignore_index=True)
+                farmer_df.to_csv('data/farmers_data.csv', index=False)
 
-            st.balloons()
-            st.success("✅ Database Updated!")
+                # Update regional supply
+                supply_mask = (
+                    (supply_df['crop_name'] == crop_name) &
+                    (supply_df['region'] == region)
+                )
 
-            st.session_state.confirmed_crop = crop_name
-            st.session_state.confirmed_region = region
-            st.session_state.step = 3
-            st.rerun()
+                if not supply_df[supply_mask].empty:
+                    supply_df.loc[supply_mask, 'area_allocated'] += land
+                    supply_df.loc[supply_mask, 'farmer_count'] += 1
+                else:
+                    new_row = {
+                        'region': region,
+                        'crop_name': crop_name,
+                        'expected_demand': 1000,
+                        'current_supply': 1000,
+                        'area_allocated': land,
+                        'farmer_count': 1
+                    }
+                    supply_df = pd.concat([supply_df, pd.DataFrame([new_row])], ignore_index=True)
 
-        except Exception as e:
-            st.error(f"Update Error: {e}")
+                supply_df.to_csv('data/regional_supply.csv', index=False)
+
+                st.balloons()
+                st.success("✅ Database Updated!")
+
+                st.session_state.confirmed_crop = crop_name
+                st.session_state.confirmed_region = region
+                st.session_state.step = 3
+                st.rerun()
+
+            except Exception as e:
+                st.error(f"Update Error: {e}")
+    else:
+        # Show warning when no crop is selected
+        st.warning("⚠️ தயவுசெய்து மேலே உள்ள ஒரு பயிரைத் தேர்வு செய்யவும் / Please select a crop from the recommendations above to view the report and download options.")
 
 
 # 🗺️ Step 3: Regional Crop Distribution View WITH MAP
