@@ -146,19 +146,6 @@ def step_farm_details():
     if st.button("← Back"):
         st.session_state.step = 0
         st.rerun()
-    
-
-# 📄 PDF Class (kept for future use)
-class PDF(FPDF):
-    def header(self):
-        self.set_font('Arial', 'B', 15)
-        self.cell(0, 10, 'TN Agri Smart - Crop Report', 0, 1, 'C')
-    def footer(self):
-        self.set_y(-15)
-        self.set_font('Arial', 'I', 8)
-        self.cell(0, 10, f'Page {self.page_no()}', 0, 0, 'C')
-
-
 
 # 🌱 Enhanced Crop Care Database (Detailed Phase-wise)
 CROP_CARE = {
