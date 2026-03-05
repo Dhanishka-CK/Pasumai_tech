@@ -1,0 +1,10 @@
+streamlit
+pandas
+scikit-learn
+joblib
+plotly
+folium
+streamlit-folium
+google-generativeai
+python-dotenv
+gTTS

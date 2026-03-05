@@ -1,0 +1,224 @@
+farmer_id,region,land_area,soil_type,water_availability,nitrogen,phosphorus,potassium,ph,selected_crop,area_allocated
+F001,Chennai,5.2,Clay,High,88,38,42,6.4,Rice,4.5
+F002,Chennai,3.8,Loam,Medium,75,32,36,6.7,Wheat,3.2
+F003,Chennai,6.5,Sandy,Low,62,28,34,6.2,Maize,5.0
+F004,Chennai,4.1,Clay,High,95,45,48,6.8,Sugarcane,3.8
+F005,Chennai,2.9,Loam,Medium,58,26,32,6.0,Cotton,2.5
+F006,Chennai,5.8,Sandy,Low,48,30,38,5.9,Pulses,4.2
+F007,Chennai,3.5,Clay,High,82,36,40,6.5,Groundnut,3.0
+F008,Chennai,4.7,Loam,Medium,70,34,38,6.3,Millet,4.0
+F009,Chennai,6.2,Sandy,High,72,36,50,6.5,Tomato,5.5
+F010,Chennai,3.2,Clay,Medium,68,32,46,6.3,Onion,2.8
+F011,Chennai,5.0,Loam,High,82,40,56,6.8,Brinjal,4.5
+F012,Chennai,2.5,Sandy,Low,56,26,40,6.0,Okra,2.0
+F013,Chennai,4.4,Clay,Medium,62,30,46,6.2,Cabbage,3.8
+F014,Chennai,3.9,Loam,High,78,36,52,6.4,Cauliflower,3.5
+F015,Chennai,5.5,Sandy,Medium,52,22,36,6.1,Carrot,4.8
+F016,Chennai,2.8,Clay,Low,88,46,62,6.6,Chili,2.3
+F017,Coimbatore,4.8,Clay,High,85,36,40,6.3,Rice,4.2
+F018,Coimbatore,3.5,Loam,Medium,72,30,34,6.6,Wheat,3.0
+F019,Coimbatore,6.0,Sandy,Low,60,26,32,6.1,Maize,5.2
+F020,Coimbatore,4.0,Clay,High,92,43,46,6.7,Sugarcane,3.6
+F021,Coimbatore,2.7,Loam,Medium,56,24,30,5.9,Cotton,2.3
+F022,Coimbatore,5.5,Sandy,Low,46,28,36,5.8,Pulses,4.0
+F023,Coimbatore,3.3,Clay,High,80,34,38,6.4,Groundnut,2.8
+F024,Coimbatore,4.5,Loam,Medium,68,32,36,6.2,Millet,3.8
+F025,Coimbatore,6.0,Sandy,High,70,34,48,6.4,Tomato,5.3
+F026,Coimbatore,3.0,Clay,Medium,66,30,44,6.2,Onion,2.6
+F027,Coimbatore,4.8,Loam,High,80,38,54,6.7,Brinjal,4.3
+F028,Coimbatore,2.3,Sandy,Low,54,24,38,5.9,Okra,1.8
+F029,Coimbatore,4.2,Clay,Medium,60,28,44,6.1,Cabbage,3.6
+F030,Coimbatore,3.7,Loam,High,76,34,50,6.3,Cauliflower,3.3
+F031,Coimbatore,5.3,Sandy,Medium,50,20,34,6.0,Carrot,4.6
+F032,Coimbatore,2.6,Clay,Low,86,44,60,6.5,Chili,2.1
+F033,Madurai,4.5,Clay,High,82,34,38,6.2,Rice,4.0
+F034,Madurai,3.2,Loam,Medium,70,28,32,6.5,Wheat,2.8
+F035,Madurai,5.8,Sandy,Low,58,24,30,6.0,Maize,5.0
+F036,Madurai,3.8,Clay,High,90,41,44,6.6,Sugarcane,3.4
+F037,Madurai,2.5,Loam,Medium,54,22,28,5.8,Cotton,2.1
+F038,Madurai,5.3,Sandy,Low,44,26,34,5.7,Pulses,3.8
+F039,Madurai,3.1,Clay,High,78,32,36,6.3,Groundnut,2.6
+F040,Madurai,4.3,Loam,Medium,66,30,34,6.1,Millet,3.6
+F041,Madurai,5.8,Sandy,High,68,32,46,6.3,Tomato,5.1
+F042,Madurai,2.8,Clay,Medium,64,28,42,6.1,Onion,2.4
+F043,Madurai,4.6,Loam,High,78,36,52,6.6,Brinjal,4.1
+F044,Madurai,2.1,Sandy,Low,52,22,36,5.8,Okra,1.6
+F045,Madurai,4.0,Clay,Medium,58,26,42,6.0,Cabbage,3.4
+F046,Madurai,3.5,Loam,High,74,32,48,6.2,Cauliflower,3.1
+F047,Madurai,5.1,Sandy,Medium,48,18,32,5.9,Carrot,4.4
+F048,Madurai,2.4,Clay,Low,84,42,58,6.4,Chili,1.9
+F049,Salem,4.2,Clay,High,80,32,36,6.1,Rice,3.8
+F050,Salem,3.0,Loam,Medium,68,26,30,6.4,Wheat,2.6
+F051,Salem,5.5,Sandy,Low,56,22,28,5.9,Maize,4.8
+F052,Salem,3.6,Clay,High,88,39,42,6.5,Sugarcane,3.2
+F053,Salem,2.3,Loam,Medium,52,20,26,5.7,Cotton,1.9
+F054,Salem,5.1,Sandy,Low,42,24,32,5.6,Pulses,3.6
+F055,Salem,2.9,Clay,High,76,30,34,6.2,Groundnut,2.4
+F056,Salem,4.1,Loam,Medium,64,28,32,6.0,Millet,3.4
+F057,Salem,5.6,Sandy,High,66,30,44,6.2,Tomato,4.9
+F058,Salem,2.6,Clay,Medium,62,26,40,6.0,Onion,2.2
+F059,Salem,4.4,Loam,High,76,34,50,6.5,Brinjal,3.9
+F060,Salem,1.9,Sandy,Low,50,20,34,5.7,Okra,1.4
+F061,Salem,3.8,Clay,Medium,56,24,40,5.9,Cabbage,3.2
+F062,Salem,3.3,Loam,High,72,30,46,6.1,Cauliflower,2.9
+F063,Salem,4.9,Sandy,Medium,46,16,30,5.8,Carrot,4.2
+F064,Salem,2.2,Clay,Low,82,40,56,6.3,Chili,1.7
+F065,Tiruchirappalli,4.6,Clay,High,84,35,39,6.3,Rice,4.1
+F066,Tiruchirappalli,3.4,Loam,Medium,71,29,33,6.6,Wheat,3.0
+F067,Tiruchirappalli,6.1,Sandy,Low,59,25,31,6.1,Maize,5.3
+F068,Tiruchirappalli,4.1,Clay,High,93,44,47,6.8,Sugarcane,3.7
+F069,Tiruchirappalli,2.8,Loam,Medium,57,25,31,6.0,Cotton,2.4
+F070,Tiruchirappalli,5.6,Sandy,Low,47,29,37,5.9,Pulses,4.1
+F071,Tiruchirappalli,3.4,Clay,High,81,35,39,6.5,Groundnut,2.9
+F072,Tiruchirappalli,4.6,Loam,Medium,69,33,37,6.3,Millet,3.9
+F073,Tiruchirappalli,6.1,Sandy,High,71,35,49,6.5,Tomato,5.4
+F074,Tiruchirappalli,3.1,Clay,Medium,67,31,45,6.3,Onion,2.7
+F075,Tiruchirappalli,4.9,Loam,High,81,39,55,6.8,Brinjal,4.4
+F076,Tiruchirappalli,2.4,Sandy,Low,55,25,39,6.0,Okra,1.9
+F077,Tiruchirappalli,4.3,Clay,Medium,61,29,45,6.2,Cabbage,3.7
+F078,Tiruchirappalli,3.8,Loam,High,77,35,51,6.4,Cauliflower,3.4
+F079,Tiruchirappalli,5.4,Sandy,Medium,51,21,35,6.1,Carrot,4.7
+F080,Tiruchirappalli,2.7,Clay,Low,87,45,61,6.6,Chili,2.2
+F081,Erode,4.0,Clay,High,79,31,35,6.0,Rice,3.6
+F082,Erode,2.9,Loam,Medium,67,25,29,6.3,Wheat,2.5
+F083,Erode,5.3,Sandy,Low,55,21,27,5.8,Maize,4.6
+F084,Erode,3.5,Clay,High,87,38,41,6.4,Sugarcane,3.1
+F085,Erode,2.2,Loam,Medium,51,19,25,5.6,Cotton,1.8
+F086,Erode,4.9,Sandy,Low,41,23,31,5.5,Pulses,3.4
+F087,Erode,2.8,Clay,High,75,29,33,6.1,Groundnut,2.3
+F088,Erode,3.9,Loam,Medium,63,27,31,5.9,Millet,3.2
+F089,Erode,5.4,Sandy,High,65,29,43,6.1,Tomato,4.7
+F090,Erode,2.5,Clay,Medium,61,25,39,5.9,Onion,2.1
+F091,Erode,4.2,Loam,High,75,33,49,6.4,Brinjal,3.7
+F092,Erode,1.8,Sandy,Low,49,19,33,5.6,Okra,1.3
+F093,Erode,3.6,Clay,Medium,55,23,39,5.8,Cabbage,3.0
+F094,Erode,3.1,Loam,High,71,29,45,6.0,Cauliflower,2.7
+F095,Erode,4.7,Sandy,Medium,45,15,29,5.7,Carrot,4.0
+F096,Erode,2.1,Clay,Low,81,39,55,6.2,Chili,1.6
+F097,Tirunelveli,3.8,Clay,High,77,30,34,5.9,Rice,3.4
+F098,Tirunelveli,2.7,Loam,Medium,65,24,28,6.2,Wheat,2.3
+F099,Tirunelveli,5.1,Sandy,Low,53,20,26,5.7,Maize,4.4
+F100,Tirunelveli,3.3,Clay,High,85,37,40,6.3,Sugarcane,2.9
+F101,Tirunelveli,2.0,Loam,Medium,49,18,24,5.5,Cotton,1.6
+F102,Tirunelveli,4.7,Sandy,Low,39,22,30,5.4,Pulses,3.2
+F103,Tirunelveli,2.6,Clay,High,73,28,32,6.0,Groundnut,2.1
+F104,Tirunelveli,3.7,Loam,Medium,61,26,30,5.8,Millet,3.0
+F105,Tirunelveli,5.2,Sandy,High,63,28,42,6.0,Tomato,4.5
+F106,Tirunelveli,2.3,Clay,Medium,59,24,38,5.8,Onion,1.9
+F107,Tirunelveli,4.0,Loam,High,73,32,48,6.3,Brinjal,3.5
+F108,Tirunelveli,1.6,Sandy,Low,47,18,32,5.5,Okra,1.1
+F109,Tirunelveli,3.4,Clay,Medium,53,22,38,5.7,Cabbage,2.8
+F110,Tirunelveli,2.9,Loam,High,69,28,44,5.9,Cauliflower,2.5
+F111,Tirunelveli,4.5,Sandy,Medium,43,14,28,5.6,Carrot,3.8
+F112,Tirunelveli,1.9,Clay,Low,79,38,54,6.1,Chili,1.4
+F113,Vellore,3.6,Clay,High,75,29,33,5.8,Rice,3.2
+F114,Vellore,2.5,Loam,Medium,63,23,27,6.1,Wheat,2.1
+F115,Vellore,4.9,Sandy,Low,51,19,25,5.6,Maize,4.2
+F116,Vellore,3.1,Clay,High,83,36,39,6.2,Sugarcane,2.7
+F117,Vellore,1.8,Loam,Medium,47,17,23,5.4,Cotton,1.4
+F118,Vellore,4.5,Sandy,Low,37,21,29,5.3,Pulses,3.0
+F119,Vellore,2.4,Clay,High,71,27,31,5.9,Groundnut,1.9
+F120,Vellore,3.5,Loam,Medium,59,25,29,5.7,Millet,2.8
+F121,Vellore,5.0,Sandy,High,61,27,41,5.9,Tomato,4.3
+F122,Vellore,2.1,Clay,Medium,57,23,37,5.7,Onion,1.7
+F123,Vellore,3.8,Loam,High,71,31,47,6.2,Brinjal,3.3
+F124,Vellore,1.4,Sandy,Low,45,17,31,5.4,Okra,0.9
+F125,Vellore,3.2,Clay,Medium,51,21,37,5.6,Cabbage,2.6
+F126,Vellore,2.7,Loam,High,67,27,43,5.8,Cauliflower,2.3
+F127,Vellore,4.3,Sandy,Medium,41,13,27,5.5,Carrot,3.6
+F128,Vellore,1.7,Clay,Low,77,37,53,6.0,Chili,1.2
+F129,Thoothukudi,3.4,Clay,High,73,28,32,5.7,Rice,3.0
+F130,Thoothukudi,2.3,Loam,Medium,61,22,26,6.0,Wheat,1.9
+F131,Thoothukudi,4.7,Sandy,Low,49,18,24,5.5,Maize,4.0
+F132,Thoothukudi,2.9,Clay,High,81,35,38,6.1,Sugarcane,2.5
+F133,Thoothukudi,1.6,Loam,Medium,45,16,22,5.3,Cotton,1.2
+F134,Thoothukudi,4.3,Sandy,Low,35,20,28,5.2,Pulses,2.8
+F135,Thoothukudi,2.2,Clay,High,69,26,30,5.8,Groundnut,1.7
+F136,Thoothukudi,3.3,Loam,Medium,57,24,28,5.6,Millet,2.6
+F137,Thoothukudi,4.8,Sandy,High,59,26,40,5.8,Tomato,4.1
+F138,Thoothukudi,1.9,Clay,Medium,55,22,36,5.6,Onion,1.5
+F139,Thoothukudi,3.6,Loam,High,69,30,46,6.1,Brinjal,3.1
+F140,Thoothukudi,1.2,Sandy,Low,43,16,30,5.3,Okra,0.7
+F141,Thoothukudi,3.0,Clay,Medium,49,20,36,5.5,Cabbage,2.4
+F142,Thoothukudi,2.5,Loam,High,65,26,42,5.7,Cauliflower,2.1
+F143,Thoothukudi,4.1,Sandy,Medium,39,12,26,5.4,Carrot,3.4
+F144,Thoothukudi,1.5,Clay,Low,75,36,52,5.9,Chili,1.0
+F145,Dindigul,3.2,Clay,High,71,27,31,5.6,Rice,2.8
+F146,Dindigul,2.1,Loam,Medium,59,21,25,5.9,Wheat,1.7
+F147,Dindigul,4.5,Sandy,Low,47,17,23,5.4,Maize,3.8
+F148,Dindigul,2.7,Clay,High,79,34,37,6.0,Sugarcane,2.3
+F149,Dindigul,1.4,Loam,Medium,43,15,21,5.2,Cotton,1.0
+F150,Dindigul,4.1,Sandy,Low,33,19,27,5.1,Pulses,2.6
+F151,Dindigul,2.0,Clay,High,67,25,29,5.7,Groundnut,1.5
+F152,Dindigul,3.1,Loam,Medium,55,23,27,5.5,Millet,2.4
+F153,Dindigul,4.6,Sandy,High,57,25,39,5.7,Tomato,3.9
+F154,Dindigul,1.7,Clay,Medium,53,21,35,5.5,Onion,1.3
+F155,Dindigul,3.4,Loam,High,67,29,45,6.0,Brinjal,2.9
+F156,Dindigul,1.0,Sandy,Low,41,15,29,5.2,Okra,0.5
+F157,Dindigul,2.8,Clay,Medium,47,19,35,5.4,Cabbage,2.2
+F158,Dindigul,2.3,Loam,High,63,25,41,5.6,Cauliflower,1.9
+F159,Dindigul,3.9,Sandy,Medium,37,11,25,5.3,Carrot,3.2
+F160,Dindigul,1.3,Clay,Low,73,35,51,5.8,Chili,0.8
+F161,Chennai,5.0,Clay,High,86,37,41,6.3,Rice,4.3
+F162,Chennai,3.6,Loam,Medium,73,31,35,6.6,Wheat,3.1
+F163,Chennai,6.3,Sandy,Low,60,27,33,6.1,Maize,5.1
+F164,Chennai,4.2,Clay,High,94,44,47,6.7,Sugarcane,3.9
+F165,Chennai,2.8,Loam,Medium,57,25,31,5.9,Cotton,2.4
+F166,Chennai,5.6,Sandy,Low,47,29,37,5.8,Pulses,4.1
+F167,Chennai,3.4,Clay,High,81,35,39,6.4,Groundnut,2.9
+F168,Chennai,4.6,Loam,Medium,69,33,37,6.2,Millet,3.9
+F169,Chennai,6.1,Sandy,High,71,35,49,6.4,Tomato,5.4
+F170,Chennai,3.1,Clay,Medium,67,31,45,6.2,Onion,2.7
+F171,Chennai,4.9,Loam,High,81,39,55,6.7,Brinjal,4.4
+F172,Chennai,2.4,Sandy,Low,55,25,39,6.0,Okra,1.9
+F173,Chennai,4.3,Clay,Medium,61,29,45,6.1,Cabbage,3.7
+F174,Chennai,3.8,Loam,High,77,35,51,6.3,Cauliflower,3.4
+F175,Chennai,5.4,Sandy,Medium,51,21,35,6.0,Carrot,4.7
+F176,Chennai,2.7,Clay,Low,87,45,61,6.5,Chili,2.2
+F177,Coimbatore,4.7,Clay,High,84,36,40,6.2,Rice,4.1
+F178,Coimbatore,3.4,Loam,Medium,71,30,34,6.5,Wheat,3.0
+F179,Coimbatore,5.9,Sandy,Low,59,25,31,6.0,Maize,5.2
+F180,Coimbatore,3.9,Clay,High,91,42,45,6.6,Sugarcane,3.5
+F181,Coimbatore,2.6,Loam,Medium,55,23,29,5.8,Cotton,2.2
+F182,Coimbatore,5.4,Sandy,Low,45,27,35,5.7,Pulses,3.9
+F183,Coimbatore,3.2,Clay,High,79,33,37,6.3,Groundnut,2.7
+F184,Coimbatore,4.4,Loam,Medium,67,31,35,6.1,Millet,3.7
+F185,Coimbatore,5.9,Sandy,High,69,33,47,6.3,Tomato,5.2
+F186,Coimbatore,2.9,Clay,Medium,65,29,43,6.1,Onion,2.5
+F187,Coimbatore,4.7,Loam,High,79,37,53,6.6,Brinjal,4.2
+F188,Coimbatore,2.2,Sandy,Low,53,23,37,5.8,Okra,1.7
+F189,Coimbatore,4.1,Clay,Medium,59,27,43,6.0,Cabbage,3.5
+F190,Coimbatore,3.6,Loam,High,75,33,49,6.2,Cauliflower,3.2
+F191,Coimbatore,5.2,Sandy,Medium,49,19,33,5.9,Carrot,4.5
+F192,Coimbatore,2.5,Clay,Low,85,43,59,6.4,Chili,2.0
+F193,Madurai,4.4,Clay,High,81,33,37,6.1,Rice,3.9
+F194,Madurai,3.1,Loam,Medium,69,27,31,6.4,Wheat,2.7
+F195,Madurai,5.7,Sandy,Low,57,23,29,5.9,Maize,4.9
+F196,Madurai,3.7,Clay,High,89,40,43,6.5,Sugarcane,3.3
+F197,Madurai,2.4,Loam,Medium,53,21,27,5.7,Cotton,2.0
+F198,Madurai,5.2,Sandy,Low,43,25,33,5.6,Pulses,3.7
+F199,Madurai,3.0,Clay,High,77,31,35,6.2,Groundnut,2.5
+F200,Madurai,4.2,Loam,Medium,65,29,33,6.0,Millet,3.5
+2345678990,Coimbatore,1.0,Red Loam,High,40,40,40,6.5,Onion,1.0
+2657288991094,Coimbatore,1.0,Red Loam,High,40,40,40,6.5,Chili,1.0
+2657288991094,Coimbatore,1.0,Red Loam,High,40,40,40,6.5,Chili,1.0
+2657288991094,Coimbatore,1.0,Red Loam,High,40,40,40,6.5,Chili,1.0
+2657288991094,Coimbatore,1.0,Red Loam,High,40,40,40,6.5,Chili,1.0
+23456875543225,Coimbatore,1.0,Red Loam,High,40,40,40,6.5,Chili,1.0
+23456875543225,Coimbatore,1.0,Red Loam,High,40,40,40,6.5,Chili,1.0
+2657288991094,Coimbatore,1.0,Red Loam,High,40,40,40,6.5,Chili,1.0
+2657288991094,Coimbatore,1.0,Red Loam,High,40,40,40,6.5,Chili,1.0
+2657288991094,Coimbatore,1.0,Red Loam,High,40,40,40,6.5,Chili,1.0
+2657288991094,Salem,1.0,Red Loam,High,40,40,40,6.5,Chili,1.0
+2657288991094,Coimbatore,1.0,Sandy,Low,48,28,63,6.729999999999995,Chili,1.0
+2657288991094,Coimbatore,1.0,Red Loam,High,40,40,40,6.5,Chili,1.0
+2657288991094,Salem,1.0,Alluvial,High,40,40,40,6.5,Chili,1.0
+2657288991094,Coimbatore,1.0,Red Loam,High,40,40,40,6.5,Chili,1.0
+2657288991094,Coimbatore,1.0,Red Loam,High,40,40,40,6.5,Chili,1.0
+2657288991094,Salem,1.0,Red Loam,High,40,40,40,6.5,Chili,1.0
+2347868909,Coimbatore,1.0,Red Loam,High,40,40,40,6.5,Chili,1.0
+2347868909,Salem,1.0,Red Loam,High,40,40,40,6.5,Chili,1.0
+3246878,Coimbatore,1.0,Black Cotton,High,40,40,40,6.5,Chili,1.0
+5667,Coimbatore,1.0,Red Loam,High,40,40,40,6.5,Cotton,1.0
+5667,Coimbatore,1.0,Red Loam,High,40,40,40,6.5,Cotton,1.0
+2657288991094,Coimbatore,1.0,Red Loam,High,40,40,40,6.5,Chili,1.0
