@@ -4,7 +4,6 @@ from streamlit_folium import folium_static
 import streamlit as st
 import pandas as pd
 import os
-from fpdf import FPDF
 import plotly.express as px
 from io import BytesIO
 from utils.ai_handler import get_tamil_ai_advice
