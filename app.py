@@ -507,10 +507,12 @@ def step_analysis():
     else:
         st.warning("தயவுசெய்து மேலே உள்ள ஒரு பயிரைத் தேர்வு செய்யவும் / Please select a crop above.")
 
-    selected_crop_data = st.session_state.selected_crop_data
-    st.subheader(TA_UI['report'])
+    if st.session_state.selected_crop_data is not None:
+        selected_crop_data = st.session_state.selected_crop_data
+        st.subheader(TA_UI['report'])
 
-    crop_name = selected_crop_data['crop']
+        crop_name = selected_crop_data['crop']  # ✅ Safe now
+        crop_name_ta = TA_CROPS.get(crop_name, crop_name)
     crop_name_ta = TA_CROPS.get(crop_name, crop_name)
 
     
